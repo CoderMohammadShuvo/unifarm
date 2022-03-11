@@ -1,0 +1,1077 @@
+@font-face {
+  font-family: FuturaXBlkBT;
+  src: url('./fonts/Futura\ XBlk\ BT.ttf');
+}
+@font-face {
+  font-family: FuturaBold;
+  src: url('./fonts/Futura\ Bold\ font.ttf');
+}
+@font-face {
+  font-family: FuturaBook;
+  src: url('./fonts/Futura\ Book\ font.ttf');
+}
+@font-face {
+  font-family: FuturaLight;
+  src: url('./fonts/futura\ light\ bt.ttf');
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #1a0066;
+}
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('./assets/web/Illustration\ 01.png'),
+    url('./assets/web/Illustration\ 02.png'),
+    url('./assets/web/seperator\ 1.png'),
+    url('./assets/web/Illustration\ 03.png'),
+    url('./assets/web/seperator\ 1.png'),
+    url('./assets/web/Illustration\ 04\ \(1\).png'),
+    url('./assets/web/seperator\ 1.png'),
+    url('./assets/web/Illustration\ 05.png'),
+    url('./assets/web/seperator\ 1.png'),
+    url('./assets/web/Illustration\ 06.png');
+  background-size: 100% 932px, 100% 1300px, 100% 33px, 100% 996px, 100% 33px,
+    100% 1013px, 100% 33px, 100% 1111px, 100% 33px, 100% 1700px;
+  background-position: left 0px, left 800px, left 2065px, left 2098px,
+    left 3095px, left 3150px, left 4160px, left 4130px, left 5240px, left 5240px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.navigation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+#hamburderIcon {
+  display: none;
+}
+#closeIcon {
+  display: none;
+}
+
+.navigationSection {
+  width: 1140px;
+  height: 127px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: radial-gradient(50% 50% at 50.04% 50%, #2d1f94 0%, #1b0268 100%);
+  border: 2px solid #322098;
+  box-sizing: border-box;
+  box-shadow: inset 0px 4px 23px rgba(0, 0, 0, 0.28);
+  border-radius: 13px;
+  margin-top: -10px;
+}
+
+#logo {
+  height: 40px;
+  width: 170px;
+  margin-left: 20px;
+}
+.navItems {
+  margin-left: -30px;
+}
+.navItems a {
+  text-decoration: none;
+  font-family: FuturaBook;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  opacity: 0.8;
+  padding: 0px 30px;
+  border-right: 2px solid rgba(255, 255, 255, 0.877);
+}
+#navButton {
+  width: 192px;
+  height: 75px;
+  text-decoration: none;
+  background-image: url('./assets/web/navButtonBg.svg');
+  background-size: 192px 75px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: FuturaXBlkBT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ec5f2a;
+}
+
+/* HEROSECTION */
+.heroSection {
+  height: 670px;
+  width: 1140px;
+}
+.heroSocial {
+  display: flex;
+  flex-direction: column;
+  margin-top: 280px;
+}
+.heroSocial img {
+  width: 76px;
+  height: 67px;
+  cursor: pointer;
+}
+
+/* MINTING AREA */
+.mintingArea {
+  height: 500px;
+  width: 1140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mintigDetails {
+  height: 445px;
+  width: 686px;
+  left: 378px;
+  background: url('./assets/web/mintAreaBg.svg');
+  background-size: 100% 445px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mintigDetails h1 {
+  font-family: FuturaXBlkBT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 46px;
+  background: -webkit-linear-gradient(177.05deg, #4adeff 2.45%, #ffffff 161.7%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 38px #4adeff;
+  margin-bottom: 0;
+  margin-top: 70px;
+}
+.mintigDetails h4 {
+  font-family: FuturaBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+  margin-top: 0;
+  color: #ffffff;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.mintigDetails p {
+  font-family: FuturaBook;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0;
+  margin-top: 35px;
+}
+.mintingDetail {
+  display: flex;
+  height: 70px;
+  align-items: center;
+}
+.left {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.mintingDetail img {
+  z-index: 4;
+  cursor: pointer;
+}
+.number {
+  display: flex;
+}
+#mintingAmountInput {
+  width: 171px;
+  height: 48px;
+  background-color: #0d003e;
+  border: none;
+  font-family: FuturaBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 -40px;
+  z-index: 1;
+}
+.number h3 {
+  width: 60px;
+  height: 58px;
+  background: #0d003e;
+  border-radius: 12px;
+  font-family: FuturaBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 20px;
+  cursor: pointer;
+}
+#mintButton {
+  width: 174px;
+  height: 87px;
+  background: url('./assets/web/MintbuttonBg.svg');
+  background-size: 174px 87px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  border: none;
+  font-family: FuturaXBlkBT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ec5f2a;
+  margin-top: -80px;
+}
+
+/* STORY */
+.story {
+  height: 900px;
+  width: 1140px;
+}
+.story h1 {
+  font-family: FuturaXBlkBT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 46px;
+  background: -webkit-linear-gradient(177.05deg, #4adeff 2.45%, #ffffff 161.7%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 38px #4adeff;
+  margin-bottom: 0;
+  margin-top: 70px;
+  margin-left: 400px;
+}
+.story p {
+  font-family: FuturaLight;
+  font-size: 22px;
+  line-height: 34px;
+  /* or 155% */
+  margin-left: 400px;
+  color: #ffffff;
+}
+.afterStory {
+  height: 600px;
+  width: 1140px;
+}
+.afterStory p {
+  font-family: FuturaLight;
+  font-size: 22px;
+  line-height: 34px;
+  /* or 155% */
+  color: #ffffff;
+}
+
+/* SLIDER */
+.slider {
+  height: 1300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.slider p {
+  font-family: FuturaLight;
+  font-size: 22px;
+  line-height: 34px;
+  /* or 155% */
+  margin-top: 374px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.slider h1 {
+  font-family: FuturaXBlkBT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 46px;
+  background: -webkit-linear-gradient(177.05deg, #4adeff 2.45%, #ffffff 161.7%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 38px #4adeff;
+  margin-bottom: 0;
+  text-align: center;
+  margin-top: 50px;
+}
+.collectionImage {
+  overflow: hidden;
+  height: 400px;
+  padding-top: 0px;
+}
+.slideTrac {
+  display: flex;
+  width: calc(160px * 14);
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  width: 150px;
+  align-items: center;
+  perspective: 100px;
+  margin: 20px 40px;
+}
+.slide img {
+  transition: transform 1s;
+}
+.slide img:hover {
+  transform: translateZ(30px);
+  cursor: pointer;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-150px * 7));
+  }
+}
+#openSeaButton {
+  width: 202px;
+  height: 101px;
+  background: url('./assets/web/openSeaBg.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  border: none;
+  font-family: FuturaXBlkBT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 0;
+  color: #ec5f2a;
+  margin-top: -100px;
+}
+
+/* ROADMAP */
+.roadmap {
+  width: 1140px;
+  height: 900px;
+  display: flex;
+}
+.roadmapInfo ul li {
+  font-family: FuturaLight;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+#roadmapInfo1 {
+  margin-top: 400px;
+}
+
+#roadmapInfo2 {
+  margin-top: 700px;
+}
+#roadmapInfo3 {
+  margin-top: 250px;
+}
+#roadmapInfo4 {
+  margin-top: 650px;
+}
+
+/* FAQ */
+.faq {
+  height: 1100px;
+  width: 1140px;
+}
+.faq h1 {
+  font-family: FuturaXBlkBT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 46px;
+  background: -webkit-linear-gradient(177.05deg, #4adeff 2.45%, #ffffff 161.7%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 38px #4adeff;
+  margin-bottom: 0;
+  text-align: center;
+  margin-top: 350px;
+}
+.number1 {
+  width: 76px;
+  height: 66px;
+  font-family: FuturaXBlkBT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 31px;
+  line-height: 37px;
+  background: url('./assets/web/numberbg.svg');
+  background-size: 76px 66px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qaSection {
+  display: flex;
+}
+.qasection1 {
+  display: flex;
+  width: 50%;
+  margin-left: 40px;
+}
+.question {
+  font-family: FuturaBold;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 29px;
+  color: #ffffff;
+  margin-bottom: 0;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.answer {
+  font-family: FuturaLight;
+  font-size: 20px;
+  line-height: 27px;
+  margin-top: 0px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+/* COPY ADDRESS */
+.copyAddress {
+  height: 550px;
+  width: 1140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.addressArea {
+  width: 808px;
+  height: 383px;
+  background: url('./assets/web/copyBg.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.addressArea h1 {
+  font-family: FuturaXBlkBT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  background: -webkit-linear-gradient(177.05deg, #4adeff 2.45%, #ffffff 161.7%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 38px #4adeff;
+  margin-top: 70px;
+  margin-bottom: 0;
+}
+.addressArea p {
+  width: 566px;
+  height: 53px;
+  font-family: FuturaLight;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height */
+
+  text-align: center;
+  background: #0d003e;
+  border-radius: 12px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyAddress button {
+  width: 174px;
+  height: 87px;
+  background: url('./assets/web/MintbuttonBg.svg');
+  background-size: 174px 87px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  border: none;
+  font-family: FuturaXBlkBT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ec5f2a;
+  margin-top: -80px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  height: 290px;
+  width: 1140px;
+}
+.footerContent {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+#navLogo {
+  width: 196.71px;
+  height: 50px;
+}
+.footer p {
+  font-family: FuturaLight;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  background: -webkit-linear-gradient(177.05deg, #4adeff 2.45%, #ffffff 161.7%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('./assets/mob/Illustration\ 01.png'),
+      url('./assets/mob/Illustration\ 02.png'),
+      url('./assets/mob/seperator\ 1.png'),
+      url('./assets/mob/Illustration\ 03\ \(1\).png'),
+      url('./assets/mob/seperator\ 1.png'),
+      url('./assets/mob/Illustration\ 04\ \(1\).png'),
+      url('./assets/mob/seperator\ 1.png'),
+      url('./assets/mob/illustration\ 05.png'),
+      url('./assets/mob/seperator\ 1.png'),
+      url('./assets/mob/Illustration\ 06.png');
+    background-size: 100% 919px, 100% 975px, 100% 14px, 100% 1485px, 100% 14px,
+      100% 1000px, 100% 14px, 100% 1334px, 100% 14px, 100% 2016px;
+    background-position: left top, left 919px, left 1894px, left 1908px,
+      left 3393px, left 3407px, left 4407px, left 4400px, left 5695px,
+      left 5700px;
+    background-repeat: no-repeat;
+  }
+
+  /* NAVIGATION */
+
+  .navigationSection {
+    width: 350px;
+    height: 114px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: radial-gradient(
+      50% 50% at 50.04% 50%,
+      #2d1f94 0%,
+      #1b0268 100%
+    );
+    border: 2px solid #322098;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 23px rgba(0, 0, 0, 0.28);
+    border-radius: 13px;
+    margin-top: -20px;
+  }
+  #logo {
+    width: 158px;
+    height: 40.16px;
+    margin-left: 10px;
+  }
+  #navItems {
+    display: none;
+    margin-left: 0;
+  }
+  #navItems a {
+    margin-bottom: 30px;
+  }
+  #navButton {
+    display: none;
+    margin-top: 275px;
+    margin-bottom: -277px;
+  }
+  #hamburderIcon {
+    display: block;
+  }
+  #closeIcon {
+    margin-left: 150px;
+  }
+  #closeIcon {
+    margin-left: 198px;
+    margin-top: 30px;
+  }
+  .heroSection {
+    height: 600px;
+    width: 350px;
+  }
+  .heroSocial {
+    display: flex;
+    flex-direction: column;
+    margin-top: 344px;
+  }
+  .heroSocial img {
+    width: 65.47px;
+    height: 57.72px;
+    cursor: pointer;
+  }
+  .mintingArea {
+    height: 440px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mintigDetails {
+    height: 402px;
+    width: 350px;
+    left: 378px;
+    background: url(./assets/web/mintAreaBg.svg);
+    background-size: 100% 445px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mintigDetails h1 {
+    font-family: FuturaXBlkBT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 46px;
+    background: -webkit-linear-gradient(
+      177.05deg,
+      #4adeff 2.45%,
+      #ffffff 161.7%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 38px #4adeff;
+    margin-bottom: 0;
+    margin-top: 135px;
+  }
+  .mintigDetails h4 {
+    font-family: FuturaBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    margin-top: 0;
+    color: #ffffff;
+    margin-bottom: 0;
+    margin-top: 0px;
+  }
+  .mintigDetails p {
+    font-family: FuturaBook;
+    font-size: 13px;
+    line-height: 27px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 0;
+    margin-top: 0px;
+  }
+  .mintingDetail {
+    display: flex;
+    height: 49.3px;
+    align-items: center;
+    margin-top: -12px;
+  }
+  #mintingAmountInput {
+    width: 100px;
+    height: 32px;
+    background-color: #0d003e;
+    border: none;
+    font-family: FuturaBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 -40px;
+    z-index: 1;
+  }
+  .mintingDetail img {
+    width: 56.34px;
+    height: 49.3px;
+  }
+  .number h3 {
+    width: 42px;
+    height: 40px;
+    background: #0d003e;
+    border-radius: 6px;
+    font-family: FuturaBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  #mintButton {
+    width: 158px;
+    height: 59px;
+    background: url(./assets/web/MintbuttonBg.svg);
+    background-size: 158px 59px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    border: none;
+    font-family: FuturaXBlkBT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    color: #ec5f2a;
+    margin-top: -114px;
+  }
+  .story {
+    height: 901px;
+    width: 350px;
+  }
+  .story h1 {
+    font-family: FuturaXBlkBT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 30px;
+    background: -webkit-linear-gradient(
+      177.05deg,
+      #4adeff 2.45%,
+      #ffffff 161.7%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 38px #4adeff;
+    margin-bottom: 0;
+    margin-top: 70px;
+    margin-left: 110px;
+  }
+  .story p {
+    font-family: FuturaLight;
+    font-size: 15px;
+    line-height: 26px;
+    margin-left: 110px;
+    color: #ffffff;
+  }
+  .story p br {
+    display: none;
+  }
+  .afterStory {
+    height: 1050px;
+    width: 350px;
+  }
+  .afterStory p {
+    font-family: FuturaLight;
+    font-size: 15px;
+    line-height: 26px;
+    color: #ffffff;
+    margin-right: 141px;
+    margin-top: 232px;
+  }
+  .afterStory p br {
+    display: none;
+  }
+  .slider {
+    height: 1300px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  .slider p {
+    font-family: FuturaLight;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 374px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .slider p br {
+    display: none;
+  }
+  .slider h1 {
+    font-family: FuturaXBlkBT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+    background: -webkit-linear-gradient(
+      177.05deg,
+      #4adeff 2.45%,
+      #ffffff 161.7%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 38px #4adeff;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 50px !important;
+    margin: 0 50px;
+  }
+  #openSeaButton {
+    width: 158px;
+    height: 79px;
+    background: url(./assets/web/openSeaBg.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    border: none;
+    font-family: FuturaXBlkBT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 30px;
+    margin-top: 0;
+    color: #ec5f2a;
+    margin-top: -100px;
+  }
+  .roadmap {
+    width: 350px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+  }
+  #roadmapInfo1 {
+    margin-top: 271px;
+  }
+  #roadmapInfo2 {
+    margin-top: 100px;
+  }
+  #roadmapInfo3 {
+    margin-top: 100px;
+  }
+  #roadmapInfo4 {
+    margin-top: 100px;
+  }
+  .roadmapInfo ul li {
+    font-family: FuturaLight;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-right: 161px;
+  }
+  #roadmapInfo4 {
+    margin-top: 27px;
+    margin-right: -143px;
+    margin-left: 140px;
+  }
+  .faq {
+    height: 1400px;
+    width: 350px;
+  }
+  .faq h1 {
+    font-family: FuturaXBlkBT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+    background: -webkit-linear-gradient(
+      177.05deg,
+      #4adeff 2.45%,
+      #ffffff 161.7%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 38px #4adeff;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 441px;
+  }
+  .qaSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .qasection1 {
+    display: flex;
+    width: 101%;
+    margin-left: 10px;
+  }
+  .number1 {
+    width: 59px;
+    height: 51px;
+    font-family: FuturaXBlkBT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 37px;
+    background: url(./assets/web/numberbg.svg);
+    background-size: 59px 51px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .question {
+    font-family: FuturaBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 26px;
+    color: #ffffff;
+    margin-bottom: 0;
+    margin-top: 29px;
+    margin-left: 10px;
+  }
+  .answer {
+    font-family: FuturaLight;
+    font-size: 14px;
+    line-height: 27px;
+    margin-top: 0px;
+    color: #ffffff;
+    margin-left: 10px;
+  }
+  .copyAddress {
+    height: 650px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .addressArea h1 {
+    font-family: FuturaXBlkBT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 21px;
+    text-align: center;
+    background: -webkit-linear-gradient(
+      177.05deg,
+      #4adeff 2.45%,
+      #ffffff 161.7%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 38px #4adeff;
+    margin-top: 134px;
+    margin-bottom: 0;
+  }
+  .addressArea {
+    width: 350px;
+    height: 383px;
+    background: url(./assets/web/copyBg.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-top: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .addressArea p {
+    width: 291px;
+    height: 37px;
+    font-family: FuturaLight;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    background: #0d003e;
+    border-radius: 7px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .copyAddress button {
+    width: 141px;
+    height: 60px;
+    background: url(./assets/web/MintbuttonBg.svg);
+    background-size: 141px 60px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    border: none;
+    font-family: FuturaXBlkBT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ec5f2a;
+    margin-top: -151px;
+    cursor: pointer;
+  }
+  .footer {
+    height: 270px;
+    width: 350px;
+  }
+  .footerContent {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    flex-direction: column;
+  }
+  #navLogo {
+    width: 158.71px;
+    height: 40px;
+    margin-top: 25px;
+  }
+  .navItems {
+    margin-left: 0px;
+  }
+  .navItems a {
+    text-decoration: none;
+    font-family: FuturaBook;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    opacity: 0.8;
+    padding: 0px 18px;
+    border-right: 2px solid rgba(255, 255, 255, 0.877);
+  }
+  .navSocial img {
+    width: 56.07px;
+    height: 49.43px;
+  }
+  .footer p {
+    font-family: FuturaLight;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    background: -webkit-linear-gradient(
+      177.05deg,
+      #4adeff 2.45%,
+      #ffffff 161.7%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
